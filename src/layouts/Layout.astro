@@ -1,0 +1,54 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="https://www.msf.es/themes/custom/msfes/favicon/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Únete a la Carrera Solidaria por la Salud organizada por Médicos Sin Fronteras México y Centroamérica. El evento se llevará a cabo el 15 de diciembre de 2023, en el Bosque de Chapultepec, Ciudad de México. ¡Regístrate ahora!">
+    <meta name="keywords" content="Carrera Solidaria, Médicos Sin Fronteras, Salud, Ciudad de México, Bosque de Chapultepec, Registro">
+    <meta name="author" content="UcanGO">
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+
+:root {
+  --primary-color: #F26B34;
+  --second-color: #d45e2f;
+  --tamanio-fuente: 16px;
+}
+
+  * {
+		margin:0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html, body {
+		font-family:Arial, Helvetica, sans-serif;
+	}
+
+	.button__primary {
+		background-color: var(--primary-color);
+		height: auto;
+		padding: 20px 30px;
+		border: none;
+		border-radius: 5px;
+		color:#ffffff;
+		cursor:pointer;
+		font-weight: bold;
+	}
+
+</style>

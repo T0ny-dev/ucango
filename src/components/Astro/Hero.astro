@@ -1,0 +1,122 @@
+<!-- HTML Astro Framework--> 
+
+<div class="hero">
+  <h1>Tu puedes con UcanGO</h1>
+  <h3> "Lo hacemos diferente. Te llevamos diferente."</h3>
+  <div class="hero__informations">
+    <div class="hero__informations__box">
+      <img src="https://iimgvjzkjpogzlreaoya.supabase.co/storage/v1/object/sign/justmkt/world-icon-Medicos-Sin-Fronteras.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJqdXN0bWt0L3dvcmxkLWljb24tTWVkaWNvcy1TaW4tRnJvbnRlcmFzLnBuZyIsImlhdCI6MTY5OTkzNTg1MCwiZXhwIjoyMDE1Mjk1ODUwfQ.xx1-xT6RdfrGpts96AHrHHk-1LTz_1YXm0zAuKCCWaE" alt="icono mundo Medicos Sin Fronteras">
+      <p>Aplicación Global Mobile</p>
+    </div>
+    <div class="hero__informations__box">
+      <img src="https://iimgvjzkjpogzlreaoya.supabase.co/storage/v1/object/sign/justmkt/volunter-Medicos-Sin-Fronteras.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJqdXN0bWt0L3ZvbHVudGVyLU1lZGljb3MtU2luLUZyb250ZXJhcy5wbmciLCJpYXQiOjE2OTk5MzU5OTIsImV4cCI6MjAxNTI5NTk5Mn0.mnDX97lKlUEryADOkt9Pp8FBr42bUPnDbNGa_L9xEfM" alt="icono contribuye Medicos Sin Fronteras">
+      <p>Contribuye con nuestra misión</p>
+    </div>
+    <div class="hero__informations__box">
+      <img src="https://iimgvjzkjpogzlreaoya.supabase.co/storage/v1/object/sign/justmkt/calendar-Medicos-Sin-Fronteras.svg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJqdXN0bWt0L2NhbGVuZGFyLU1lZGljb3MtU2luLUZyb250ZXJhcy5zdmciLCJpYXQiOjE2OTk5MzYwMjMsImV4cCI6MjAxNTI5NjAyM30.BQxrSM7DHsu3NfMhwt_a1JaGOvehOYdCVV7TC6I3u8s" alt="icono calendario Medicos Sin Fronteras">
+      <p>Experiencia Única de trasporte</p>
+    </div>
+  </div>
+</div>
+
+<!-- CSS Astro Framework--> 
+
+<style>
+
+.hero {
+    background-image: url("https://iimgvjzkjpogzlreaoya.supabase.co/storage/v1/object/sign/justmkt/camila-fernandez-ZIp6VRx_DaI-unsplash.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJqdXN0bWt0L2NhbWlsYS1mZXJuYW5kZXotWklwNlZSeF9EYUktdW5zcGxhc2gucG5nIiwiaWF0IjoxNzAyNTI4MDM1LCJleHAiOjE3MzQwNjQwMzV9.-UOsrk89DSV8J5TwfTk2lwyIX4dl2H3airX2xMTp0UA&t=2023-12-14T04%3A27%3A14.284Z");
+    background-size:cover;
+    background-position: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:#ffffff;
+    padding:30vh 10vw 10vh 10vw;
+    height:auto;
+}
+
+.hero h1 {
+    font-size:48px;
+}
+
+.hero h3 {
+    font-size:24px;
+    font-weight:400;
+}
+
+.hero__informations {
+    display:flex;
+    padding:5vh 5vw;
+    gap:2vw;
+}
+
+.hero__informations__box {
+    display:flex;
+    align-items:center;
+    border-radius:15px;
+    background-color: rgba(240, 235, 235, 0.5); /* opacity */
+    backdrop-filter: blur(3px); /* gaussiano */ 
+    padding:12px 23px;
+    font-size:14px;
+    max-width:300px
+}
+
+.hero__informations__box img{
+    margin-right:1vw;
+}
+
+/**Media queries Tablets */
+@media screen and (max-width: 768px) {
+  .hero {
+    padding:30vh 10vw 10vh 10vw;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .hero h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hero__informations {
+    padding: 4vh 4vw;
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .hero__informations__box {
+    max-width: 350px;
+  }
+}
+
+/**Media queries Mobile */
+@media screen and (max-width: 480px) {
+  .hero {
+    padding:30vh 6vw 10vh 6vw;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 4vh;
+  }
+
+  .hero h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .hero__informations {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .hero__informations__box {
+    max-width: 100%;
+  }
+}
+
+</style>

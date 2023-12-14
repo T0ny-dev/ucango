@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/React/Navbar';
+import NavbarMobile from '../components/React/NavbarMobile';
+import Hero from '../components/Astro/Hero.astro';
+import DetailEvent from '../components/Astro/DetailsEvent.astro';
+import EventDescription from '../components/Astro/EventDescription.astro';
+import Form from '../components/React/Form';
+import SocialNetwork from '../components/Astro/SocialNetwork.astro';
+import Grid from '../components/Astro/Grid.astro'
+import Footer from '../components/Astro/Footer.astro';
+---
+
+<Layout title="UcanGO">
+	<main>
+		<Navbar/>
+		<NavbarMobile client:load/>
+		<EventDescription/>
+		<DetailEvent/>
+		<Hero/>
+		<Form client:load/>
+		<SocialNetwork/>
+		<Grid/>
+		<Footer/>
+	</main>
+</Layout>
+

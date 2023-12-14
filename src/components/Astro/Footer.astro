@@ -1,0 +1,81 @@
+<!-- HTML Astro Framework--> 
+<div class="footer">
+  <div class="footer__access">
+    <div class="footer__access__box">
+      <img src="image4.png" alt="icono phone Medicos Sin Fronteras">
+      <p>+52 1 899 899 4114</p>
+    </div> 
+    <div class="footer__access__box">
+      <img src="./image5.png" alt="icono correo Medicos Sin Fronteras">
+      <p>yulisa.plata@gmail.com</p>
+    </div> 
+    <div class="footer__access__box">
+      <img src="./image6.png">
+      <p>Reynosa, Tamaulipas, MX.</p>
+    </div> 
+  </div>
+  <div class="footer__copyright">
+    <p>Todos los derechos reservados a UcanGO México. 2023.</p>
+  </div>
+</div>
+
+<!-- CSS Astro Framework--> 
+
+<style>
+
+.footer__copyright {
+  background-color:#131313;
+  color: #ffffff;
+  padding: 5vh 5vw;
+}
+
+.footer__copyright p {
+  text-align: center;
+}
+
+.footer__access {
+  display: flex;
+  justify-content: space-between;
+  padding: 4vh 5vw;
+  border-top: 1px solid #D2CCCC;
+}
+
+.footer__access__box {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.footer__access__box img {
+  margin-right: 1vw;
+  
+}
+
+
+/**Media queries tablet & Desktop */
+@media screen and (max-width: 1050px) {
+  .footer__access {
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+}
+
+/**Media queries Mobile */
+
+@media screen and (max-width: 480px) {
+  .footer__access {
+    flex-direction: column;
+  }
+
+  .footer__access__box {
+    margin-bottom: 5vh;
+  }
+
+  .footer__access__box img {
+  margin-right: 5vw;
+}
+
+}
+
+</style>

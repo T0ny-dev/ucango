@@ -1,0 +1,41 @@
+<!-- HTML Astro Framework--> 
+<div class="grid">
+<!-- first row -->
+  <div class="grid__item" style="background-image: url('https://es.digitaltrends.com/wp-content/uploads/2018/11/uber-silla-de-ruedas.jpg?p=1');"></div>
+  <div class="grid__item" style="background-image: url('https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_538/v1582046581/assets/05/ef6817-ae63-4e84-b395-4e0fcf57e4ba/original/UberIM_000344.jpg');"></div>
+  <div class="grid__item" style="background-image: url('https://blog.uber-cdn.com/cdn-cgi/image/width=960,quality=80,onerror=redirect,format=auto/wp-content/uploads/2015/09/WAVimage_header_960x540.jpg');"></div>
+  <div class="grid__item" style="background-image: url('https://i.ytimg.com/vi/xT-9aVcjrWw/maxresdefault.jpg');"></div>
+
+  <!-- Second row -->
+  <div class="grid__item" style="background-image: url('https://www.dealermanager.co.uk/images/202311/large/DM5820-mijwhado.JPG');"></div>
+  <div class="grid__item" style="background-image: url('https://www.dealermanager.co.uk/images/202311/large/DM5820-jvtdvcdt.JPG');"></div>
+  <div class="grid__item" style="background-image: url('https://www.dealermanager.co.uk/images/202311/large/DM5820-umrnxoyf.JPG');"></div>
+  <div class="grid__item" style="background-image: url('https://www.dealermanager.co.uk/images/202311/large/DM5820-tdocmjut.JPG');"></div>
+</div>
+
+<!-- CSS Astro Framework--> 
+
+<style>
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.grid__item {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.grid__item:hover {
+  opacity: 0.8;
+}
+
+</style>

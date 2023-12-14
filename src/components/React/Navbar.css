@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90px;
+  box-shadow: 0 1px 3px #00000029;
+  padding: 2vh 3vw;
+  position: fixed;
+  z-index: 3;
+  width: 100vw;
+  background-color: #2B5480;
+}
+
+.navbar__logo img {
+  width: 10%;
+}
+
+.navbar__menu {
+  width: 75%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.navbar__menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  padding-right: 1rem;
+}
+
+@media (max-width:1030px) {
+  .navbar {
+    display: none;
+  }
+}

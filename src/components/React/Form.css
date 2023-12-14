@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 15vw;
+}
+
+.form h2 {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.form label {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+
+.form input {
+  height: 45px;
+  border: solid 1px #D2CCCC;
+  border-radius: 5px;
+  background-color: #F9F9F9;
+  padding: 1vh 2vw;
+}
+
+.form button {
+  margin-top: 5vh;
+}
+
+@media screen and (max-width: 480px) {
+  .form h2 {
+    text-align: center;
+  }
+
+  .form {
+    padding: 5vh 9vw;
+  }
+}
